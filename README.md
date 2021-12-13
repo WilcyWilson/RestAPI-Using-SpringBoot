@@ -1,1 +1,3 @@
- An employee can work in only one department; this relationship is single-valued for employees. On the other hand, one department can have many employees; the relationship is multi-valued for departments. The relationship between employees (single-valued) and departments (multi-valued) is a one-to-many relationship.
+## Demo
+
+![Demo](demo.gif)
