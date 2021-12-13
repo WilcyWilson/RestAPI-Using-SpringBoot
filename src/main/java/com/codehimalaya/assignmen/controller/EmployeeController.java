@@ -21,9 +21,11 @@ public class EmployeeController {
 		return this.employeeService.getEmployees();
 	}
 	
+	// 2. Find Employees By Their Employee Id
 	@GetMapping("/employees/{id}")
 	public Employee getEmployee(@PathVariable int id) {
 		return this.employeeService.getEmployee(id);
 	}
+	
 	
 }

@@ -13,6 +13,7 @@ public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 
+	// 3. Create new Department
 	@PostMapping("/departments")
 	public Department addDepartment(@RequestBody Department department) {
 		return this.departmentService.addDepartment(department);
