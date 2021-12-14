@@ -1,7 +1,6 @@
 package com.codehimalaya.assignmen.entities;
 
 import javax.persistence.Entity;
-
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
@@ -14,8 +13,8 @@ public class Employee {
 	private int employeeId;
 	private String name;
 	
-//	@ManyToOne
-//	private Department department;
+	@ManyToOne
+	private Department department;
 
 	public int getEmployeeId() {
 		return employeeId;
@@ -37,6 +36,14 @@ public class Employee {
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 
 	public Employee(int employeeId, String name) {

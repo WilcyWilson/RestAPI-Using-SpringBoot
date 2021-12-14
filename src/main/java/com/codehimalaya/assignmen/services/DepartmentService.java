@@ -5,5 +5,5 @@ import com.codehimalaya.assignmen.entities.Employee;
 
 public interface DepartmentService {
 	public Department addDepartment(Department department);
-//	public Employee assignEmployee(int empid, int depid);
+	public Employee assignEmployee(int empid, int depid);
 }

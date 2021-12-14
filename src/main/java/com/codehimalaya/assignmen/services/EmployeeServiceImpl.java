@@ -1,6 +1,5 @@
 package com.codehimalaya.assignmen.services;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +16,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<Employee> getEmployees() {
-		employeeDao.saveAll(Arrays.asList(
-				new Employee(3, "Wilson"),
-				new Employee(4,"Manoj")
-      )); 
+//		employeeDao.saveAll(Arrays.asList(
+//				new Employee(3, "Wilson"),
+//				new Employee(4,"Manoj")
+//      )); 
 		return employeeDao.findAll();
 	}
 
