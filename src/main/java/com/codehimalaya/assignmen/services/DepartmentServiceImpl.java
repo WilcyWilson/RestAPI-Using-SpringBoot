@@ -19,7 +19,6 @@ public class DepartmentServiceImpl implements DepartmentService {
 	public Department addDepartment(Department department) {
 		return departmentDao.save(department);
 	}
-
 	@Override
 	public Employee assignEmployee(int empid, int depid) {
 		Employee emp = employeeDao.getById(empid);
