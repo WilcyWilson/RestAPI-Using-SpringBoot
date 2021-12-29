@@ -2,6 +2,7 @@ package com.codehimalaya.assignmen.controller;
 
 import java.util.List;
 
+import com.codehimalaya.assignmen.constants.PathConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +18,7 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 
 	// 1. List all Employees
-	@GetMapping("/employees")
+	@GetMapping(PathConstants.FETCH_EMPLOYEES)
 	public List<Employee> getEmployees() {
 		return employeeService.getEmployees();
 	}
